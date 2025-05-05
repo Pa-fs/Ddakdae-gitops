@@ -5,3 +5,5 @@ resources:
   - frontend/deployment.yml
   - frontend/service.yml
   - frontend/ingress.yml
+  - backend/deployment.yml
+  - backend/service.yml

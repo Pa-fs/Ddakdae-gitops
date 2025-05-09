@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: taeyoungk/ddackdae-backend:0.0.4
+        image: taeyoungk/ddackdae-backend:0.0.5
         ports:
         - containerPort: 8080
         env:

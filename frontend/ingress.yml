@@ -4,12 +4,18 @@ metadata:
   name: react-ingress
   namespace: default
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    kubernetes.io/ingress.class: "gce"
 spec:
-  ingressClassName: nginx
   rules:
     - http:
         paths:
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: backend-service
+                port:
+                  number: 80
           - path: /
             pathType: Prefix
             backend:

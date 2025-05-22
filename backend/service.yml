@@ -9,6 +9,6 @@ spec:
   selector:
     app: backend
   ports:
-    - port: 80              # 클러스터 내부에서 서비스 접근용 포트
+    - port: 8080              # 클러스터 내부에서 서비스 접근용 포트
       targetPort: 8080      # 백엔드 컨테이너가 실제로 사용하는 포트
       protocol: TCP

@@ -7,4 +7,3 @@ resources:
   - frontend/ingress.yml
   - backend/deployment.yml
   - backend/service.yml
-  - backend/ingress.yml
